@@ -428,7 +428,8 @@ table {
 
 #masthead{/*this is a header, not just plain a div*/
 	overflow:hidden;
-	background: url(img/n6SzoTK.jpg);
+	background: url(img/tester.jpg) scroll no-repeat;
+	background-width: 100%; 
 }
 	.site-branding{
 		margin: 2%;
