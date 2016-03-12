@@ -69,7 +69,7 @@ figcaption,
 figure,
 footer,
 header,
-main,
+#main,
 menu,
 nav,
 section,
@@ -420,6 +420,62 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
+/*Set up the layout!!!!
+* I currently have it spaced to give us an idea
+* of what divs are inside what*/
+
+
+#masthead{/*this is a header, not just plain a div*/
+	overflow:hidden;
+	background: url(img/n6SzoTK.jpg);
+}
+	.site-branding{
+		margin: 2%;
+		float:left;
+		width:10%;
+		height: auto;
+	}
+	#site-navigation{/*this is a nav not just plain a div*/
+		margin-right:10%;
+		margin-left: 10%;
+		max-width:75%;
+	}
+	#primary-menu ul li a{
+		margin:0.5em;
+		display: block;
+		max-width: 100%;
+		line-height: 1.25em;
+	}
+
+
+#content{
+
+}
+
+	#primary{
+
+	}
+	#main{
+
+	}
+		.navigation .posts-navigation{
+
+		}
+	#secondary{/*this an aside, not just plain a div*/
+
+	}
+	#secondary.widget-area{
+
+	}
+#colophon{/*this is a footer not just plain a div*/
+
+}
+	.site-info{
+
+	}
+
+
 
 /*--------------------------------------------------------------
 # Forms
@@ -774,6 +830,8 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
