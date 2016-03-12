@@ -271,7 +271,9 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
+body {
+	background-color: #ffe699;
+}
 button,
 input,
 select,
@@ -289,6 +291,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Merriweather', serif;
 	clear: both;
 }
 
