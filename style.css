@@ -847,6 +847,10 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
+.entry-meta{
+	font-style: italic;
+}
+
 .byline,
 .updated:not(.published) {
 	display: none;
