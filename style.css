@@ -55,7 +55,11 @@ html {
 
 body {
 	margin: 0;
-	width:100%;
+}
+
+div{
+	border:solid;
+	margin:0.2em;
 }
 
 article,
@@ -65,7 +69,7 @@ figcaption,
 figure,
 footer,
 header,
-main,
+#main,
 menu,
 nav,
 section,
@@ -264,67 +268,16 @@ th {
 	padding: 0;
 }
 
-/* -------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-.site-header {
-	background-color: #000;
-	background-size: cover;
-}
-
-.site-logo {
-	position: relative;
-}
-
-.site-logo a {
-	position: abosulte;
-	z-index: 10;
-	top: 1em;
-	left: 1em;
-	display: block;
-	width: 2em;
-	height: 2em;
-	background: black;
-	border: 2px solid white;
-	color: white;
-	text-decoration: none;
-}
-
-.site-logo a:hover,
-.site-logo a:focus {
-	outline:2px solid white;
-}
-
-.site-firstletter {
-	font-family: 'Merriweather', serif;
-	font-size: 1.5em;
-	font-weight: 700;
-	text-align: center;
-	line-height: 1.3em;
-}
-
-.site-logo a:hover .site-firstletter,
-.site-logo a:focus .site-firstletter {
-	background: white;
-	color:black;
-}
-
-.site-branding {
-	text-align: center;
-}
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body {
-	background-color: #ffe699;
-}
+body,
 button,
 input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -469,6 +422,81 @@ table {
 	width: 100%;
 }
 
+/*Set up the layout!!!!
+* I currently have it spaced to give us an idea
+* of what divs are inside what*/
+
+#page{
+	background-color: #fffaea;
+	padding:0.5em;
+}
+
+#masthead{/*this is a header, not just plain a div*/
+	overflow:hidden;
+	background: url() scroll no-repeat;
+	width: 100%; 
+	text-align:center;
+
+}
+	.site-branding{
+		margin: 0 2.5% 0 2.5%;
+		width:95%;
+		height: auto;
+	}
+nav{
+
+}
+	#site-navigation{/*this is a nav not just plain a div*/
+		margin-right:10%;
+		margin-left: 10%;
+		max-width:75%;
+	}
+	#primary-menu ul li a{
+		margin:0.5em;
+		display: block;
+		max-width: 100%;
+		line-height: 1.25em;
+	}
+
+
+#content{
+	padding: 0.5em;
+}
+
+	#primary{
+		padding: 0.5em;
+		width:75%;
+		margin-left: 12%;
+		margin-right: 12%;
+	}
+	#main{
+
+	}
+		.navigation .posts-navigation{
+
+		}
+	
+aside{
+
+}
+	#secondary{/*this an aside, not just plain a div*/
+
+	}
+	#secondary.widget-area{
+
+	}
+footer{
+
+}
+#colophon{/*this is a footer not just plain a div*/
+
+}
+	.site-info{
+
+	}
+
+
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -476,14 +504,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 0.5em solid;
+	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: #e6e6e6;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, .8);
 	font-size: 12px;
-	font-size: 0.75rem;
+	font-size: 0.75em;
 	line-height: 1;
 	padding: .6em 1em .4em;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -583,26 +611,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #ff8a80;
+	color: #DE64A3;
 }
 
 a:visited {
-	color: purple;
+	color: #505050;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	outline: 0;
+	color: #ED8DBB;
 }
 
 /*--------------------------------------------------------------
@@ -616,15 +635,24 @@ a:active {
 }
 
 .main-navigation ul {
-	display: none;
+	display: block;
 	list-style: none;
-	margin: 0;
+	margin: 0.01em;
 	padding-left: 0;
+}
+.main-navigation ul li {
+	border-right: thin solid;
+	display:inline-block;
+	line-height:1em;
+}
+.main-navigation ul li:last-child{
+	border-right: none;
 }
 
 .main-navigation li {
 	float: left;
 	position: relative;
+	background-color: transparent;
 }
 
 .main-navigation a {
@@ -634,20 +662,22 @@ a:active {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	display: block;
 	position: absolute;
-	top: 1.5em;
+	top: 2em;
 	left: -999em;
-	z-index: 99999;
+	z-index: 9999;
 }
 
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
+	z-index: 99999;
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width:auto;
+	line-height: 1.05em
 }
 
 .main-navigation ul ul li {
@@ -822,6 +852,8 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -831,6 +863,10 @@ a:active {
 
 .hentry {
 	margin: 0 0 1.5em;
+}
+
+.entry-meta{
+	font-style: italic;
 }
 
 .byline,
