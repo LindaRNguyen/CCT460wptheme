@@ -444,6 +444,7 @@ table {
 		margin-right:10%;
 		margin-left: 10%;
 		max-width:75%;
+		z-index: 9999999;
 	}
 	#primary-menu ul li a{
 		margin:0.5em;
@@ -611,15 +612,6 @@ a:active {
 	color: #ED8DBB;
 }
 
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	outline: 0;
-}
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -633,8 +625,14 @@ a:active {
 .main-navigation ul {
 	display: block;
 	list-style: none;
-	margin: 0;
+	margin: 0.01em;
 	padding-left: 0;
+}
+.main-navigation ul li {
+	border-right: thin solid;
+}
+.main-navigation ul li:last-child{
+	border-right: none;
 }
 
 .main-navigation li {
@@ -649,7 +647,7 @@ a:active {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	display: inline-block;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
@@ -659,6 +657,7 @@ a:active {
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
+	z-index: 99999;
 }
 
 .main-navigation ul ul a {
