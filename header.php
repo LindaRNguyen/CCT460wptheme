@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 
-<?php } else ( ?>
+<?php } else { ?>
 	<header id="masthead" class="site-header" role="banner">
 <?php } ?>
 
@@ -37,7 +37,7 @@
 			</div>
 		</a>
 	</div>
-	
+
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
