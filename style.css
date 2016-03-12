@@ -54,6 +54,7 @@ html {
 }
 
 body {
+	background-color: #ffe699;
 	margin: 0;
 }
 
@@ -271,9 +272,7 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body {
-	background-color: #ffe699;
-}
+body,
 button,
 input,
 select,
