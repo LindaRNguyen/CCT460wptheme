@@ -116,6 +116,10 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
 function underscores_scripts() {
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
 
+	// Addition of Google Fonts
+
+	wp_enque_style( 'underscores-google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic' );
+
 	wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'underscores-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
