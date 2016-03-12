@@ -430,13 +430,14 @@ table {
 
 #masthead{/*this is a header, not just plain a div*/
 	overflow:hidden;
-	background: url(img/tester.jpg) scroll no-repeat;
-	background-width: 100%; 
+	background: url() scroll no-repeat;
+	width: 100%; 
+	text-align:center;
+
 }
 	.site-branding{
-		margin: 2%;
-		float:left;
-		width:10%;
+		margin: 0 2.5% 0 2.5%;
+		width:95%;
 		height: auto;
 	}
 	#site-navigation{/*this is a nav not just plain a div*/
@@ -453,11 +454,14 @@ table {
 
 
 #content{
-
+	padding: 0.5em;
 }
 
 	#primary{
-
+		padding: 0.5em;
+		width:75%;
+		margin-left: 12%;
+		margin-right: 12%;
 	}
 	#main{
 
@@ -594,17 +598,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #DE64A3;
 }
 
 a:visited {
-	color: purple;
+	color: #505050;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #ED8DBB;
 }
 
 a:focus {
@@ -627,7 +631,7 @@ a:active {
 }
 
 .main-navigation ul {
-	display: none;
+	display: block;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
