@@ -55,7 +55,11 @@ html {
 
 body {
 	margin: 0;
-	width:100%;
+}
+
+div{
+	border:solid;
+	margin:0.2em;
 }
 
 article,
@@ -424,7 +428,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 0.5em solid;
+	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: #e6e6e6;
@@ -531,7 +535,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #ff8a80;
+	color: royalblue;
 }
 
 a:visited {
