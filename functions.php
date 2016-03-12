@@ -118,7 +118,7 @@ function underscores_scripts() {
 
 	// Addition of Google Fonts
 
-	wp_enque_style( 'underscores-google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic' );
+	wp_enqueue_style( 'underscores-google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic|Merriweather:400,400italic,700italic,700' );
 
 	wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
