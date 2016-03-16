@@ -25,7 +25,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-
 			<?php //First letter of site logo as Icon ?>
 			<div class="site-logo">
 				<?php $site_title - get_bloginfo( 'name' ); ?>
@@ -43,7 +42,6 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
 			endif;
-
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
