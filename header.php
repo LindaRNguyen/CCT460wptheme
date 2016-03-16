@@ -24,21 +24,18 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'underscores' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
-
 		<div class="site-branding">
-	
 
-	<?php //First letter of site logo as Icon ?>
-	<div class="site-logo">
-		<?php $site_title = get_bloginfo( 'name' ); ?>
-		<a href="<?php echo esc_url ( home_url ( '/' ) ); ?>" rel="home">
-			<div class="site-firstletter" arias-hidden="true">
-				<?php echo substr($site_title, 0, 1); ?>
+			<?php //First letter of site logo as Icon ?>
+			<div class="site-logo">
+				<?php $site_title - get_bloginfo( 'name' ); ?>
+				<a href="<?php echo esc_url ( home_url ( '/' } ); ?>" rel="home">
+				<div class="site-firstletter" arias-hidden="true">
+					<?php echo substr($site_title, 0, 1); ?>
+				</div>
+				</a>
 			</div>
-		</a>
-	</div>
 
-	
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
