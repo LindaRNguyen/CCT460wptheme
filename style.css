@@ -443,6 +443,12 @@ table {
 		width:95%;
 		height: auto;
 	}
+	.site-logo{
+		height:auto;
+		width:5em;
+		margin:0.25em;
+		float:left;
+	}
 nav{
 
 }
