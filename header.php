@@ -27,8 +27,8 @@
 		<div class="site-branding">
 			<?php //First letter of site logo as Icon ?>
 			<div class="site-logo">
-				<?php $site_title - get_bloginfo( 'name' ); ?>
-				<a href="<?php echo esc_url ( home_url ( '/' } ); ?>" rel="home">
+				<?php $site_title = get_bloginfo( 'name' ); ?>
+				<a href="<?php echo esc_url ( home_url ( '/' ) ); ?>" rel="home">
 				<div class="site-firstletter" arias-hidden="true">
 					<?php echo substr($site_title, 0, 1); ?>
 				</div>
