@@ -159,4 +159,3 @@ require get_template_directory() . '/inc/jetpack.php';
 * Add Options page
 */
 require get_stylesheet_directory().'/inc/options.php';
-

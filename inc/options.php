@@ -8,7 +8,7 @@ add_action( 'admin_menu', 'gd_add_submenu' );
 
 function themeoptions_page()
 {
-	if ( $_POST['update_themeoptions'] == 'true' ) { update_themeoptions(); }
+if ( $_POST['update_themeoptions'] == 'true' ) { update_themeoptions(); }
 	//here is the main function that will generate our options page
 	?>
 	<div class="wrap">
@@ -60,4 +60,3 @@ function themeoptions_page()
  
     update_option('mytheme_twitter_username',   $_POST['twitter_username']);
 }
-	
