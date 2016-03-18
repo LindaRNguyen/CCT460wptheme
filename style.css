@@ -97,6 +97,7 @@ template {
 
 a {
 	background-color: transparent;
+
 }
 
 a:active,
@@ -634,6 +635,8 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: #DE64A3;
+	text-decoration: none;
+	}
 }
 
 a:visited {
