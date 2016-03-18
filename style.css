@@ -2,7 +2,7 @@
 Theme Name: Glory Deer
 Theme URI: http://underscores.me/
 Author: Linda Nguyen, Marta Bielak & Samantha Kozicki
-Author URI: https://phoenix.sheridanc.on.ca/~ccit3414/
+Author URI: https://phoenix.sheridanc.on.ca/~ccit3416/
 Description: The sketchbook themed theme for the fictional company glory deer which sells vintage designer clothing and promotes craft culture in local area
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -277,7 +277,8 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -289,7 +290,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Merriweather', serif;
+	font-family: 'Muli', sans-serif;
+	text-transform:uppercase;
 	clear: both;
 }
 
