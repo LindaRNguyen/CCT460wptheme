@@ -58,7 +58,7 @@ body {
 }
 
 div{
-	border:solid;
+	border:none;
 	margin:0.2em;
 }
 
@@ -481,6 +481,14 @@ nav{
 	}
 	#main{
 
+	}
+	.home .entry-content > img{
+		margin:1.2em;
+		float:left;
+
+	}
+	.home .entry-content{
+		padding:1em;
 	}
 		.navigation .posts-navigation{
 
