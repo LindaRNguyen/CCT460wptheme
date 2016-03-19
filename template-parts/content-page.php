@@ -24,7 +24,7 @@
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'underscores' ),
 				'after'  => '</div>',
-			) );
+			) );}
 		?>
 	</div><!-- .entry-content -->
 
