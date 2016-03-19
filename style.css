@@ -546,8 +546,11 @@ input[type="submit"] {
 	font-size: 12px;
 	font-size: 0.75em;
 	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	padding: .6em 0.5em .9em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50px;
+    right: 50px;
 }
 
 button:hover,
@@ -630,6 +633,9 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"] {
 	padding: 3px;
+    position: absolute;
+    top: 50px;
+    right: 63px;
 }
 
 textarea {
