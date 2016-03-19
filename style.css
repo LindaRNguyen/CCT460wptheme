@@ -487,7 +487,7 @@ nav{
 
 	#primary{
     padding: 14em;
-    max-width: inherit;
+    max-width: 100%;
     margin: auto;
     background-image: url("img/tester2.jpg");
 	}
