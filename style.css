@@ -483,7 +483,6 @@ nav{
 
 
 #content{
-	padding: 0.5em;
 }
 
 	#primary{
@@ -492,7 +491,6 @@ nav{
     margin: auto;
     background-image: url("img/tester.jpg");
 	}
-	
 	#main{
 
 	}
