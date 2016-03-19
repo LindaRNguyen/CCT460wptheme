@@ -472,10 +472,12 @@ nav{
 
 }
 	#site-navigation{/*this is a nav not just plain a div*/
-		margin-right:10%;
-		margin-left: 10%;
-		max-width:75%;
+		    margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 8%;
+            max-width: 75%;
 	}
+	
 	#primary-menu ul li a{
 		margin:0.5em;
 		display: block;
@@ -665,9 +667,9 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+    display: block;
+    float: none;
+    width: 100%;
 }
 
 .main-navigation ul {
