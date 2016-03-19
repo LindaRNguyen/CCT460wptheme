@@ -635,11 +635,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	text-decoration: none;
-	}
-}
-
-a:visited {
-	color: #505050;
+	color: #f4ad56;
 }
 
 a:hover,
