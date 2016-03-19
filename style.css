@@ -676,7 +676,7 @@ a:active {
 .main-navigation ul li {
     display: inline-block;
     margin: 1em;
-    padding-left: 4em;
+    padding-left: 5em;
 }
 .main-navigation ul li:last-child{
 	border-right: none;
