@@ -635,13 +635,13 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	text-decoration: none;
-	color: #f4ad56;
+	color: #505050;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #505050;
+	color: #f4ad56;
 }
 
 /*--------------------------------------------------------------
@@ -661,9 +661,9 @@ a:active {
 	padding-left: 0;
 }
 .main-navigation ul li {
-	border-right: thin solid;
-	display:inline-block;
-	line-height:1em;
+    display: inline-block;
+    margin: 1em;
+    padding-left: 5.5em;
 }
 .main-navigation ul li:last-child{
 	border-right: none;
