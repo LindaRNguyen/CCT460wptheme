@@ -57,10 +57,6 @@ body {
 	margin: 0;
 }
 
-div{
-	border:none;
-	margin:0.2em;
-}
 
 article,
 aside,
@@ -439,7 +435,6 @@ table {
 
 #page{
 	background-color: #ffffff;
-	padding:0.5em;
 }
 
 #masthead{/*this is a header, not just plain a div*/
