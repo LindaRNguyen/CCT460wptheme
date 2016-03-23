@@ -13,7 +13,7 @@
 	/*The custom Query to limit the category & number of posts on the page*/
 	/*Also helps pagination*/
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-	$limit = array( 'showposts' => 2, 'cat'=> 191, 'paged'=> $paged);
+	$limit = array( 'showposts' => 2, 'paged'=> $paged);
 	$custom_query= new WP_Query($limit);
 	?>
 	
