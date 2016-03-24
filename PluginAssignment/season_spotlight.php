@@ -12,14 +12,18 @@ Icon made by Freepik from http://www.flaticon.com licensed by CC 3.0 BY
 add_action('init', 'shine_spotlight');
 
 function shine_spotlight(){
-	register_post_type('ssn_spotlight',
-		array(
-			'labels'=> array(
-				'name'=>"Season's Spotlight",
-				'add_new'=>'Add New',
-				'edit'=>'Edit',
-				'view'=>'View'
-				),
+
+		 $labels = array(
+				'name'=>__("Season's Spotlight"),
+				'add_new'=>__('Add New'),
+				'edit'=>__('Edit'),
+				'view'=>__('View')
+				);
+
+		$moreargs = array(
+			'label'=>__('ssn_spotlight','glorydeer'),
+			'description'=>__('Posts used for displaying seasonal designers that are not featured in the main collection','glorydeer'),
+			'labels'=>$labels,
 			'public'=> true,
 			'menu_position'=> 10,
 			'supports'=> array(
@@ -29,6 +33,12 @@ function shine_spotlight(){
 				'custom-fields'),
 			'taxonomies'=> array(''),
 			'menu_icon'=>plugins_url('plugimgs/icon.png',__FILE__),
-			'has_archive'=> true));
+			'rewrite'=>array(
+				'slug'=> 'spotlight', 'with_front'=> false),
+			'has_archive'=> true);
+		register_post_type('ssn_spotlight', $moreargs);
 }
+
+add_action ('init', 'shine_spotlight')
+
 ?>
