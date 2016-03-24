@@ -16,15 +16,8 @@
 
 	<div class="entry-content">
 		<?php
-			if ( has_post_thumbnail() ) { ?>
-				 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"> <!--make images link to single post page -->
-			<?php the_post_thumbnail('large'); 
-			the_content();
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'underscores' ),
-				'after'  => '</div>',
-			) );
+		the_post_thumbnail('large');
+		the_content();
 		?>
 	</div><!-- .entry-content -->
 
