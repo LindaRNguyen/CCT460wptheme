@@ -37,7 +37,7 @@ function shine_spotlight(){
 				'slug'=> 'veryhighmuchlight', 'with_front'=> false),
 			'has_archive'=> true);
 		register_post_type('ssn_spotlight', $moreargs);
-		/* flush_rewrite_rules(); apparently this is bad form but nothing else has worked short of going into Dashboard >Settings to configure the permalinks manually as the user managed EDIT: got it working but need it tested*/
+		flush_rewrite_rules(); /*apparently this is bad form but nothing else has worked short of going into Dashboard >Settings to configure the permalinks manually as the user managed EDIT: got it working but need it tested*/
 
 }
 
