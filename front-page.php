@@ -39,13 +39,6 @@
 <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
 <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
-<?php
- if ( wp_is_mobile() ) {/*wordpress way of making div only appear on mobile screens*/
-	echo '	
-	<div id="disillusionment">
-		I"m almost invisible! You can"t see me! Neenerneenerneeer! Wait what? You can? ooops.
-	</div>';
-	}
 ?>
 		</main><!-- #main -->
 
