@@ -13,9 +13,16 @@
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				?>
+				<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">
+				<?php the_title(); ?>
+				</a></h2>
+				<?php the_content();
 			} else {
-				the_title( '<h2 class="entry-title">', '</h2>');
+				?>
+				<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark">
+					<?php the_title(); ?>
+				</a></h2><?php
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
