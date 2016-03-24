@@ -178,8 +178,6 @@ add_actions('admin_menu', 'themeoptions_admin_menu');
 
 ?>
 
-<a href="mailto:samanthakozicki.com">Contact Us</a>
-
 /**
  * Implement the Custom Header feature.
  */
