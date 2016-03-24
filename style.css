@@ -1,9 +1,10 @@
 /*
-Theme Name: Glory Deer
+Theme Name: Glory Deer Ltd. 
 Theme URI: http://underscores.me/
-Author: Linda Nguyen, Marta Bielak & Samantha Kozicki
-Author URI: https://phoenix.sheridanc.on.ca/~ccit3414/
-Description: The sketchbook themed theme for the fictional company glory deer which sells vintage designer clothing and promotes craft culture in local area
+Author: Marta Bielak, Linda Nguyen, & Samantha Kozicki
+Author URI: https://phoenix.sheridanc.on.ca/~ccit3416/
+Description: The sketchbook theme for a fictional company called Glory Deer Ltd, which sells 
+vintage clothing and promotes local vintage culture and fashion designers. 
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -57,10 +58,6 @@ body {
 	margin: 0;
 }
 
-div{
-	border:none;
-	margin:0.2em;
-}
 
 article,
 aside,
@@ -97,6 +94,7 @@ template {
 
 a {
 	background-color: transparent;
+
 }
 
 a:active,
@@ -277,7 +275,8 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -289,8 +288,17 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Merriweather', serif;
+	font-family: 'Century Gothic', sans-serif;
+	text-transform:uppercase;
+	letter-spacing: 0.6px;
 	clear: both;
+	font-style: none;
+}
+h1{
+    font-size: 2em;
+    margin: 0.67em 0;
+    letter-spacing: 8.5px;
+    font-weight: 300;
 }
 
 p {
@@ -427,8 +435,7 @@ table {
 * of what divs are inside what*/
 
 #page{
-	background-color: #fffaea;
-	padding:0.5em;
+	background-color: #ffffff;
 }
 
 #masthead{/*this is a header, not just plain a div*/
@@ -444,10 +451,14 @@ table {
 		height: auto;
 	}
 		.site-logo{
-		height:10em;
-		width:10em;
-		float:left;
+		height: 10.5em;
+        margin: auto;
+        width: 10.5em;
+        position: inherit;
+        opacity: 0.7;
+        background-image: url("img/logo.png");
 		}
+		
 		.site-firstletter{
 			width:100%;
 			height: 100%;
@@ -457,10 +468,12 @@ nav{
 
 }
 	#site-navigation{/*this is a nav not just plain a div*/
-		margin-right:10%;
-		margin-left: 10%;
-		max-width:75%;
+		    margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 8%;
+            max-width: 75%;
 	}
+	
 	#primary-menu ul li a{
 		margin:0.5em;
 		display: block;
@@ -470,14 +483,13 @@ nav{
 
 
 #content{
-	padding: 0.5em;
 }
 
 	#primary{
-		padding: 0.5em;
-		width:75%;
-		margin-left: 12%;
-		margin-right: 12%;
+    padding: 14em;
+    max-width: 100%;
+    margin: auto;
+    background-image: url("img/tester2.jpg");
 	}
 	#main{
 
@@ -531,8 +543,11 @@ input[type="submit"] {
 	font-size: 12px;
 	font-size: 0.75em;
 	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	padding: .6em 0.5em .9em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50px;
+    right: 50px;
 }
 
 button:hover,
@@ -615,6 +630,9 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"] {
 	padding: 3px;
+    position: absolute;
+    top: 50px;
+    right: 63px;
 }
 
 textarea {
@@ -629,17 +647,14 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #DE64A3;
-}
-
-a:visited {
-	color: #505050;
+	text-decoration: none;
+	color: #f4ad56;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #ED8DBB;
+	color: #505050;
 }
 
 /*--------------------------------------------------------------
@@ -647,9 +662,9 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+    display: block;
+    float: none;
+    width: 100%;
 }
 
 .main-navigation ul {
@@ -659,9 +674,9 @@ a:active {
 	padding-left: 0;
 }
 .main-navigation ul li {
-	border-right: thin solid;
-	display:inline-block;
-	line-height:1em;
+    display: inline-block;
+    margin: 1em;
+    padding-left: 5em;
 }
 .main-navigation ul li:last-child{
 	border-right: none;
@@ -676,6 +691,7 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .main-navigation ul ul {
