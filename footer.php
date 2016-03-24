@@ -23,8 +23,6 @@
 </div><!-- #page -->
 
 
-<a href="mailto:samanthakozicki.com">Contact Us</a>
-
 <?php wp_footer(); ?>
 
 </body>
