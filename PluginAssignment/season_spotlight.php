@@ -34,7 +34,7 @@ function shine_spotlight(){
 			'taxonomies'=> array(''),
 			'menu_icon'=>plugins_url('plugimgs/icon.png',__FILE__),
 			'rewrite'=>array(
-				'slug'=> 'spotlight', 'with_front'=> false),
+				'slug'=> 'spotlight', 'with_front'=> true),
 			'has_archive'=> true);
 		register_post_type('ssn_spotlight', $moreargs);
 }
