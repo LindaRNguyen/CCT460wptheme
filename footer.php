@@ -17,10 +17,13 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underscores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'underscores' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underscores' ), 'Glory Deer Ltd.', '<a href="http://underscores.me/" rel="designer"> Marta Bielak, Linda Nguyen, & Samantha Kozicki</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underscores' ), 'underscores', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+
+<a href="mailto:samanthakozicki.com">Contact Us</a>
 
 <?php wp_footer(); ?>
 
